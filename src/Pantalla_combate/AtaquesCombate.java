@@ -65,7 +65,7 @@ public class AtaquesCombate  {
 				Ataque1.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 				
-					combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[charAtak].getDaño());
+					combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[charAtak].getDano());
 					combate.Informacion.setOpaque(true);
 					combate.Informacion.setText("Tu "+jugador+" ha utlizado= "+ Ataque.values()[charAtak].getNombre());
 					try {
@@ -84,7 +84,7 @@ public class AtaquesCombate  {
 				JButton Ataque2 = new JButton( Ataque.values()[charAtak1].getNombre());
 				Ataque2.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[charAtak1].getDaño());
+						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[charAtak1].getDano());
 						
 						combate.Informacion.setOpaque(true);
 						combate.Informacion.setText("Tu "+jugador+" ha utlizado= "+ Ataque.values()[charAtak1].getNombre());
@@ -144,7 +144,7 @@ public class AtaquesCombate  {
 				JButton Ataque1 = new JButton( Ataque.values()[blasAtak].getNombre());
 				Ataque1.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[blasAtak].getDaño());
+						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[blasAtak].getDano());
 						
 						combate.Informacion.setOpaque(true);
 						combate.Informacion.setText("Tu "+jugador+" ha utlizado= "+ Ataque.values()[blasAtak].getNombre());
@@ -162,7 +162,7 @@ public class AtaquesCombate  {
 				JButton Ataque2 = new JButton( Ataque.values()[blasAtak1].getNombre());
 				Ataque2.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[blasAtak1].getDaño());
+						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[blasAtak1].getDano());
 						
 						combate.Informacion.setOpaque(true);
 						combate.Informacion.setText("Tu "+jugador+" ha utlizado= "+ Ataque.values()[blasAtak1].getNombre());
@@ -221,7 +221,7 @@ public class AtaquesCombate  {
 				JButton Ataque1 = new JButton( Ataque.values()[venAtak].getNombre());
 				Ataque1.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[venAtak].getDaño());
+						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[venAtak].getDano());
 						
 						combate.Informacion.setOpaque(true);
 						combate.Informacion.setText("Tu "+jugador+" ha utlizado= "+ Ataque.values()[venAtak].getNombre());
@@ -240,7 +240,7 @@ public class AtaquesCombate  {
 				JButton Ataque2 = new JButton( Ataque.values()[venAtak1].getNombre());
 				Ataque2.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[venAtak1].getDaño());
+						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[venAtak1].getDano());
 						
 						combate.Informacion.setOpaque(true);
 						combate.Informacion.setText("Tu "+jugador+" ha utlizado= "+ Ataque.values()[venAtak1].getNombre());
@@ -299,7 +299,7 @@ public class AtaquesCombate  {
 				JButton Ataque1 = new JButton( Ataque.values()[pikAtak].getNombre());
 				Ataque1.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
-						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[pikAtak].getDaño());
+						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[pikAtak].getDano());
 						
 						combate.Informacion.setOpaque(true);
 						combate.Informacion.setText("Tu "+jugador+" ha utlizado= "+ Ataque.values()[pikAtak].getNombre());
@@ -317,7 +317,7 @@ public class AtaquesCombate  {
 				JButton Ataque2 = new JButton( Ataque.values()[pikAtak1].getNombre());
 				Ataque2.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[pikAtak1].getDaño());
+						combate.vidaContrincante.setValue(combate.vidaContrincante.getValue()- Ataque.values()[pikAtak1].getDano());
 						
 						combate.Informacion.setOpaque(true);
 						combate.Informacion.setText("Tu "+jugador+" ha utlizado= "+ Ataque.values()[pikAtak1].getNombre());
@@ -430,8 +430,8 @@ public class AtaquesCombate  {
 					combate.fondo.add(Inicio);
 				}else{
 					ArrayList<Integer> ataqueChar =new ArrayList<Integer>();
-					ataqueChar.add(combate.vidaJugador.getValue()- Ataque.values()[charAtak].getDaño());
-					ataqueChar.add(combate.vidaJugador.getValue()- Ataque.values()[charAtak1].getDaño());
+					ataqueChar.add(combate.vidaJugador.getValue()- Ataque.values()[charAtak].getDano());
+					ataqueChar.add(combate.vidaJugador.getValue()- Ataque.values()[charAtak1].getDano());
 					ataqueChar.add(combate.vidaJugador.getValue()- charizard.placaje());
 					ataqueChar.add(combate.vidaJugador.getValue()- charizard.ataqueRapido());
 					ArrayList<String> n_ataqueChar =new ArrayList<String>();
@@ -494,8 +494,8 @@ public class AtaquesCombate  {
 					combate.fondo.add(Inicio);
 				}else{	
 					ArrayList<Integer> ataqueBas =new ArrayList<Integer>();
-						ataqueBas.add(combate.vidaJugador.getValue()- Ataque.values()[blasAtak].getDaño());
-						ataqueBas.add(combate.vidaJugador.getValue()- Ataque.values()[blasAtak1].getDaño());
+						ataqueBas.add(combate.vidaJugador.getValue()- Ataque.values()[blasAtak].getDano());
+						ataqueBas.add(combate.vidaJugador.getValue()- Ataque.values()[blasAtak1].getDano());
 						ataqueBas.add(combate.vidaJugador.getValue()- blastoise.placaje());
 						ataqueBas.add(combate.vidaJugador.getValue()- blastoise.ataqueRapido());
 						ArrayList<String> n_ataqueBlas =new ArrayList<String>();
@@ -555,8 +555,8 @@ public class AtaquesCombate  {
 					combate.fondo.add(Inicio);
 				}else{
 					ArrayList<Integer> ataqueVen =new ArrayList<Integer>();
-					ataqueVen.add(combate.vidaJugador.getValue()- Ataque.values()[venAtak].getDaño());
-					ataqueVen.add(combate.vidaJugador.getValue()- Ataque.values()[venAtak1].getDaño());
+					ataqueVen.add(combate.vidaJugador.getValue()- Ataque.values()[venAtak].getDano());
+					ataqueVen.add(combate.vidaJugador.getValue()- Ataque.values()[venAtak1].getDano());
 					ataqueVen.add(combate.vidaJugador.getValue()- venasaur.placaje());
 					ataqueVen.add(combate.vidaJugador.getValue()- venasaur.ataqueRapido());
 					ArrayList<String> n_ataqueVen =new ArrayList<String>();
@@ -611,8 +611,8 @@ public class AtaquesCombate  {
 					combate.fondo.add(Inicio);
 				}else{
 				ArrayList<Integer> ataquePika =new ArrayList<Integer>();
-				ataquePika.add(combate.vidaJugador.getValue()- Ataque.values()[pikAtak].getDaño());
-				ataquePika.add(combate.vidaJugador.getValue()- Ataque.values()[pikAtak1].getDaño());
+				ataquePika.add(combate.vidaJugador.getValue()- Ataque.values()[pikAtak].getDano());
+				ataquePika.add(combate.vidaJugador.getValue()- Ataque.values()[pikAtak1].getDano());
 				ataquePika.add(combate.vidaJugador.getValue()- pikachu.placaje());
 				ataquePika.add(combate.vidaJugador.getValue()- pikachu.ataqueRapido());
 				ArrayList<String> n_ataquePika =new ArrayList<String>();
@@ -663,3 +663,4 @@ public class AtaquesCombate  {
 		}
 	}
 }
+

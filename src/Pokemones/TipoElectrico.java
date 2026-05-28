@@ -10,8 +10,9 @@ package Pokemones;
 public interface TipoElectrico {
 	public void rayo();
 	public void bolaVoltio();
-	public void puñoTrueno();
+	public void punoTrueno();
 	public void chispazo();
 
 	
 }
+

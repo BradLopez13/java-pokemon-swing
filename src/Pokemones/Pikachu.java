@@ -33,7 +33,7 @@ public class Pikachu extends Pokemon implements TipoElectrico {
 	}
 	
 	@Override
-	public void puñoTrueno() {
+	public void punoTrueno() {
 		
 	}
 	
@@ -54,3 +54,4 @@ public class Pikachu extends Pokemon implements TipoElectrico {
 
 	
 }
+

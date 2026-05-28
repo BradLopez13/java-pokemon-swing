@@ -30,11 +30,15 @@ public class MusicaFondo {
 	 */
 	public void setFile(int i) {
 		try {
+			if (i < 0 || i >= urls.length || urls[i] == null) {
+				clip = null;
+				return;
+			}
 			AudioInputStream ais = AudioSystem.getAudioInputStream(urls[i]);
 			clip = AudioSystem.getClip();
 			clip.open(ais);
 		}catch (Exception e) {
-		
+			clip = null;
 		}
 	}
 	
@@ -42,14 +46,20 @@ public class MusicaFondo {
 	 * Metodos de inicar,parar,en bucle del clip
 	 */
 	public void play() {
-		clip.start();
+		if (clip != null) {
+			clip.start();
+		}
 	}
 	
 	public void loop() {
-		clip.loop(Clip.LOOP_CONTINUOUSLY);
+		if (clip != null) {
+			clip.loop(Clip.LOOP_CONTINUOUSLY);
+		}
 	}
 	
 	public void stop() {
-		clip.stop();
+		if (clip != null) {
+			clip.stop();
+		}
 	}
 }
